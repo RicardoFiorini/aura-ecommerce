@@ -1,0 +1,95 @@
+/*
+ * =================================================================
+ * AURA E-COMMERCE - STYLE.CSS (O ARQUIVO PRINCIPAL)
+ * =================================================================
+ * Este arquivo importa todos os outros módulos de CSS e define
+ * as variáveis globais de branding (cores e fontes) do projeto.
+ * =================================================================
+ */
+
+/* --- 1. IMPORTAÇÕES DOS MÓDULOS --- */
+/* (Estes arquivos serão criados a seguir) */
+
+@import url('layout.css');      /* Estilos de estrutura (header, footer, seções) */
+@import url('components.css');   /* Estilos de peças (botões, cards, forms) */
+@import url('animations.css');   /* Efeitos de scroll e transições */
+
+
+/* --- 2. VARIÁVEIS DE BRANDING (DEFINIÇÃO DA MARCA) --- */
+:root {
+    /* Tipografia (como definido no briefing) */
+    --font-title: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Paleta de Cores (como definido no briefing) */
+    --color-primary: #007BFF;      /* Acento Principal (Azul Elétrico) */
+    --color-secondary: #D4AF37;    /* Acento Alternativo (Dourado Suave) */
+    --color-text: #333333;         /* Texto (Grafite) */
+    --color-background: #FBFBFB;   /* Fundo (Branco Neve) */
+    --color-dark: #121212;         /* "Quase Preto" */
+    --color-white: #FFFFFF;
+    --color-light-gray: #f8f9fa;   /* Para fundos .bg-light customizados */
+}
+
+
+/* --- 3. OVERRIDES DE VARIÁVEIS GLOBAIS DO BOOTSTRAP --- */
+/* Aqui forçamos o Bootstrap a usar as nossas variáveis de marca */
+
+:root {
+    --bs-primary: var(--color-primary);
+    --bs-primary-rgb: 0, 123, 255;  /* O RGB correspondente a #007BFF */
+    
+    --bs-dark: var(--color-dark);
+    --bs-dark-rgb: 18, 18, 18;      /* O RGB correspondente a #121212 */
+
+    --bs-body-font-family: var(--font-body);
+    --bs-body-color: var(--color-text);
+    --bs-body-bg: var(--color-background);
+    
+    --bs-heading-color: var(--color-dark); /* Títulos um pouco mais escuros */
+
+    --bs-light: var(--color-light-gray);
+    --bs-light-rgb: 248, 249, 250;
+    
+    /* Remove o arredondamento padrão do Bootstrap para um look mais "clean" */
+    /* (Exceto para componentes que usam .rounded-pill, etc.) */
+    --bs-border-radius: 0.25rem; 
+}
+
+
+/* --- 4. ESTILOS GLOBAIS E TIPOGRAFIA --- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* Efeito de transição de página (fade) para a sensação de SPA */
+    /* Controlado pelo main.js (adicionando/removendo a classe 'is-visible') */
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+body.is-visible {
+    opacity: 1;
+}
+
+/* Define a fonte dos títulos (como no briefing) */
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: var(--font-title);
+    font-weight: 700; /* Garante que a fonte carregou em negrito */
+}
+
+/* Classe especial para o Logo "AURA" (como no briefing) */
+.logo-font {
+    font-family: var(--font-title);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; /* O "kerning generoso" */
+}
+
+/* Remove sublinhado padrão de links */
+a {
+    text-decoration: none;
+}

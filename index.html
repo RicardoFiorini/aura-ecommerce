@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura: The Ethereal Experience</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand logo-font" href="index.html">AURA</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loja.html">Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="busca.html" aria-label="Buscar"><i class="bi bi-search fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html" id="user-account-link" aria-label="Minha Conta"><i class="bi bi-person fs-5"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carrinho.html" aria-label="Carrinho">
+                            <div class="position-relative">
+                                <i class="bi bi-bag fs-5"></i>
+                                <span id="cart-item-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary d-none"> 
+                                    0
+                                    <span class="visually-hidden">itens no carrinho</span>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-section d-flex align-items-center justify-content-center text-center text-white" style="background: url('https://images.pexels.com/photos/271816/pexels-photo-271816.jpeg?_gl=1*h4hbzs*_ga*Mjk4MDgxNDA5LjE3NjEwNTY5ODM.*_ga_8JE65Q40S6*czE3NjEwNTY5ODIkbzEkZzEkdDE3NjEwNTcwMjUkajE3JGwwJGgw') no-repeat center center; background-size: cover; min-height: 90vh;">
+            <div class="container hero-content animate-on-scroll">
+                <h1 class="display-3 fw-bold logo-font" style="color: white;">Design que Inspira</h1>
+                <p class="lead fs-4 mb-4">Descubra coleções selecionadas que definem o futuro do estilo.</p>
+                <a href="loja.html" class="btn btn-outline-light btn-lg rounded-pill px-5 py-2 text-uppercase fw-bold">Explorar Coleção</a>
+            </div>
+        </section>
+
+        <section class="container py-5 my-4">
+            <h2 class="text-center display-5 fw-bold mb-5 logo-font animate-on-scroll">Coleções em Destaque</h2>
+            <div class="row g-4">
+                <div class="col-md-4 animate-on-scroll" style="--animation-delay: 0.1s;">
+                    <a href="loja.html?categoria=minimalismo" class="text-decoration-none">
+                        <div class="collection-card position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Cadeiras de design minimalista" class="img-fluid">
+                            <div class="collection-card-overlay">
+                                <h3 class="logo-font fs-2">Minimalismo</h3>
+                                <span class="btn btn-outline-light rounded-pill">Ver Mais</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animate-on-scroll" style="--animation-delay: 0.2s;">
+                    <a href="loja.html?categoria=urbano" class="text-decoration-none">
+                        <div class="collection-card position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Mochila e acessórios de estilo urbano" class="img-fluid">
+                            <div class="collection-card-overlay">
+                                <h3 class="logo-font fs-2">Urbano</h3>
+                                <span class="btn btn-outline-light rounded-pill">Ver Mais</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 animate-on-scroll" style="--animation-delay: 0.3s;">
+                    <a href="loja.html?categoria=tech" class="text-decoration-none">
+                        <div class="collection-card position-relative overflow-hidden rounded shadow-sm">
+                            <img src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=600&h=800&fit=crop" alt="Fones de ouvido e gadgets tecnológicos" class="img-fluid">
+                            <div class="collection-card-overlay">
+                                <h3 class="logo-font fs-2">Tech</h3>
+                                <span class="btn btn-outline-light rounded-pill">Ver Mais</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 my-4 bg-light">
+            <div class="container animate-on-scroll">
+                <h2 class="text-center display-5 fw-bold mb-5 logo-font">Mais Vendidos</h2>
+                <div id="bestSellersCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="product-card card border-0 shadow-sm h-100">
+                                        <a href="produto.html?id=1">
+                                            <img src="https://images.pexels.com/photos/1125137/pexels-photo-1125137.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" class="card-img-top" alt="Luminária Aura Flow">
+                                        </a>
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fs-5 fw-normal">Luminária Aura Flow</h5>
+                                            <p class="card-text text-primary fw-bold fs-5">R$ 299,90</p>
+                                            <button data-id-add-to-cart="1" class="btn btn-outline-dark rounded-pill mt-auto">Adicionar ao Carrinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-card card border-0 shadow-sm h-100">
+                                        <a href="produto.html?id=2">
+                                            <img src="https://images.pexels.com/photos/4207790/pexels-photo-4207790.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" class="card-img-top" alt="Vaso Geométrico">
+                                        </a>
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fs-5 fw-normal">Vaso Geométrico</h5>
+                                            <p class="card-text text-primary fw-bold fs-5">R$ 149,90</p>
+                                            <button data-id-add-to-cart="2" class="btn btn-outline-dark rounded-pill mt-auto">Adicionar ao Carrinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="product-card card border-0 shadow-sm h-100">
+                                        <a href="produto.html?id=3">
+                                            <img src="https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" class="card-img-top" alt="Cadeira Eon">
+                                        </a>
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fs-5 fw-normal">Cadeira Eon</h5>
+                                            <p class="card-text text-primary fw-bold fs-5">R$ 1.299,90</p>
+                                            <button data-id-add-to-cart="3" class="btn btn-outline-dark rounded-pill mt-auto">Adicionar ao Carrinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row g-4">
+                                <div class="col-md-4">
+                                    <div class="product-card card border-0 shadow-sm h-100">
+                                        <a href="produto.html?id=4">
+                                            <img src="https://images.pexels.com/photos/3774612/pexels-photo-3774612.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" class="card-img-top" alt="Smart Speaker Aura">
+                                        </a>
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fs-5 fw-normal">Smart Speaker Aura</h5>
+                                            <p class="card-text text-primary fw-bold fs-5">R$ 899,90</p>
+                                            <button data-id-add-to-cart="4" class="btn btn-outline-dark rounded-pill mt-auto">Adicionar ao Carrinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                     <div class="product-card card border-0 shadow-sm h-100">
+                                        <a href="produto.html?id=6">
+                                            <img src="https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" class="card-img-top" alt="Fone de Ouvido Aura Pro">
+                                        </a>
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fs-5 fw-normal">Fone de Ouvido Aura Pro</h5>
+                                            <p class="card-text text-primary fw-bold fs-5">R$ 1.499,90</p>
+                                            <button data-id-add-to-cart="6" class="btn btn-outline-dark rounded-pill mt-auto">Adicionar ao Carrinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                     <div class="product-card card border-0 shadow-sm h-100">
+                                        <a href="produto.html?id=11">
+                                            <img src="https://images.pexels.com/photos/841545/pexels-photo-841545.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&fit=crop" class="card-img-top" alt="Teclado Mecânico 'Ghost'">
+                                        </a>
+                                        <div class="card-body text-center d-flex flex-column">
+                                            <h5 class="card-title fs-5 fw-normal">Teclado Mecânico 'Ghost'</h5>
+                                            <p class="card-text text-primary fw-bold fs-5">R$ 699,90</p>
+                                            <button data-id-add-to-cart="11" class="btn btn-outline-dark rounded-pill mt-auto">Adicionar ao Carrinho</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#bestSellersCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#bestSellersCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5 my-4">
+            <div class="row align-items-center g-5">
+                <div class="col-md-6 animate-on-scroll" style="--animation-delay: 0s;">
+                    <img src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Equipe de design colaborando em um projeto" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6 animate-on-scroll" style="--animation-delay: 0.2s;">
+                    <h2 class="display-5 fw-bold logo-font">A Essência da Aura</h2>
+                    <p class="lead fs-4">Não vendemos apenas produtos. Vendemos uma sensação.</p>
+                    <p class="fs-5 text-muted">Cada peça em nossa coleção é curada com a máxima atenção aos detalhes, unindo forma e função em perfeita harmonia. Acreditamos que um bom design tem o poder de transformar espaços e inspirar mentes.</p> 
+                    <a href="sobre.html" class="btn btn-dark btn-lg rounded-pill px-5 py-2 mt-3">Nossa História</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h3 class="logo-font fs-2">AURA</h3>
+                    <p class="text-white-50">Design que inspira. Qualidade que perdura.</p>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Mapa do Site</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none footer-link">Home</a></li>
+                        <li class="mb-2"><a href="loja.html" class="text-white-50 text-decoration-none footer-link">Loja</a></li>
+                        <li class="mb-2"><a href="sobre.html" class="text-white-50 text-decoration-none footer-link">Sobre</a></li>
+                        <li class="mb-2"><a href="contato.html" class="text-white-50 text-decoration-none footer-link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Ajuda</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none footer-link">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none footer-link">Envios e Devoluções</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none footer-link">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Siga-nos</h5>
+                    <div>
+                        <a href="#" class="text-white-50 me-3 fs-4 social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50 me-3 fs-4 social-icon"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-white-50 me-3 fs-4 social-icon"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-white-50">
+
+            <div class="text-center text-white-50 pt-2">
+                <p>&copy; 2025 Aura. Todos os direitos reservados. Projeto de portfólio fictício.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content overflow-hidden border-0 shadow-lg" style="background: url('https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=800&h=500&fit=crop') no-repeat center center; background-size: cover;">
+                <div class="row g-0">
+                    <div class="col-md-6 d-none d-md-block">
+                        </div>
+                    <div class="col-md-6 bg-white bg-opacity-75 p-5"> <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal-title logo-font display-6 mb-3" id="newsletterModalLabel">Junte-se à Aura</h3>
+                        <p class="fs-5">Ganhe <span class="fw-bold text-primary">10% OFF</span> na sua primeira compra e acesse coleções exclusivas.</p>
+                        <form id="newsletter-form">
+                            <div class="mb-3">
+                                <label for="modalEmail" class="form-label">Seu melhor e-mail:</label>
+                                <input type="email" class="form-control form-control-lg rounded-pill" id="modalEmail" placeholder="seuemail@exemplo.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-lg w-100 rounded-pill">Inscrever</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>

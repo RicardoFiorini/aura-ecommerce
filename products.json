@@ -1,0 +1,229 @@
+[
+    {
+        "id": 1,
+        "name": "Luminária Aura Flow",
+        "price": 299.90,
+        "description": "Uma luminária de mesa LED com design orgânico e controle de toque. Perfeita para criar um ambiente relaxante.",
+        "image": "https://images.pexels.com/photos/1125137/pexels-photo-1125137.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1125137/pexels-photo-1125137.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/6633919/pexels-photo-6633919.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "decor",
+        "colors": ["Branco", "Preto"],
+        "tags": ["luminaria", "decor", "minimalismo", "led", "mesa"]
+    },
+    {
+        "id": 2,
+        "name": "Vaso Geométrico",
+        "price": 149.90,
+        "description": "Feito de cerâmica de alta qualidade, este vaso traz um toque de modernidade e minimalismo para qualquer planta.",
+        "image": "https://images.pexels.com/photos/4207790/pexels-photo-4207790.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/4207790/pexels-photo-4207790.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/7937494/pexels-photo-7937494.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "decor",
+        "tags": ["vaso", "decor", "minimalismo", "planta", "ceramica"]
+    },
+    {
+        "id": 3,
+        "name": "Cadeira Eon",
+        "price": 1299.90,
+        "description": "A Cadeira Eon combina conforto ergonômico com um design escandinavo atemporal. Estrutura em madeira maciça.",
+        "image": "https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/2762247/pexels-photo-2762247.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/2082092/pexels-photo-2082092.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "minimalismo",
+        "colors": ["Cinza", "Branco"],
+        "tags": ["cadeira", "minimalismo", "escandinavo", "madeira", "sala"]
+    },
+    {
+        "id": 4,
+        "name": "Smart Speaker Aura",
+        "price": 899.90,
+        "description": "Áudio 360° de alta fidelidade com assistente inteligente integrado. O centro da sua casa conectada.",
+        "image": "https://images.pexels.com/photos/3774612/pexels-photo-3774612.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/3774612/pexels-photo-3774612.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/8099303/pexels-photo-8099303.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "tech",
+        "colors": ["Preto", "Branco"],
+        "tags": ["tech", "smart speaker", "audio", "casa conectada", "assistente"]
+    },
+    {
+        "id": 5,
+        "name": "Mesa de Centro Concreta",
+        "price": 749.90,
+        "description": "Design industrial com tampo de efeito concreto e base de metal. O ponto focal perfeito para uma sala urbana.",
+        "image": "https://images.pexels.com/photos/6489083/pexels-photo-6489083.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/6489083/pexels-photo-6489083.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/6438753/pexels-photo-6438753.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "urbano",
+        "tags": ["mesa", "concreto", "urbano", "industrial", "sala"]
+    },
+    {
+        "id": 6,
+        "name": "Fone de Ouvido Aura Pro",
+        "price": 1499.90,
+        "description": "Cancelamento de ruído ativo de nível profissional, áudio espacial e 30 horas de bateria. Sinta a música.",
+        "image": "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1649771/pexels-photo-1649771.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "tech",
+        "colors": ["Preto", "Dourado"],
+        "tags": ["fone", "tech", "audio", "bluetooth", "cancelamento de ruido"]
+    },
+    {
+        "id": 7,
+        "name": "Jaqueta Urbana AURA",
+        "price": 599.90,
+        "description": "Corte moderno, tecido técnico resistente à água e design versátil para a selva de pedra.",
+        "image": "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "urbano",
+        "colors": ["Preto"],
+        "sizes": ["P", "M", "G", "GG"],
+        "tags": ["jaqueta", "urbano", "roupa", "moda"]
+    },
+    {
+        "id": 8,
+        "name": "Relógio de Parede 'Tempo'",
+        "price": 229.90,
+        "description": "Minimalismo puro. Sem números, apenas linhas limpas e ponteiros silenciosos. Um ícone de design.",
+        "image": "https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/2792186/pexels-photo-2792186.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "minimalismo",
+        "tags": ["relogio", "decor", "minimalismo", "parede"]
+    },
+    {
+        "id": 9,
+        "name": "Kit Xícaras 'Nórdico'",
+        "price": 189.90,
+        "description": "Conjunto de 4 xícaras de café em cerâmica fosca com base de cortiça. O toque perfeito para sua manhã.",
+        "image": "https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1458867/pexels-photo-1458867.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/1301857/pexels-photo-1301857.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "decor",
+        "colors": ["Cinza", "Branco"],
+        "tags": ["xicara", "cafe", "decor", "cozinha", "minimalismo"]
+    },
+    {
+        "id": 10,
+        "name": "Mochila 'Metropolis'",
+        "price": 449.90,
+        "description": "Design anti-furto, compartimento para notebook de 15\" e tecido impermeável. A mochila definitiva para o dia a dia urbano.",
+        "image": "https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1248583/pexels-photo-1248583.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "urbano",
+        "colors": ["Preto"],
+        "tags": ["mochila", "urbano", "tech", "viagem", "notebook"]
+    },
+    {
+        "id": 11,
+        "name": "Teclado Mecânico 'Ghost'",
+        "price": 699.90,
+        "description": "Teclado 60% low-profile, sem fio, com switches ópticos e RGB customizável. Minimalismo e performance.",
+        "image": "https://images.pexels.com/photos/841545/pexels-photo-841545.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/841545/pexels-photo-841545.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/7915286/pexels-photo-7915286.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/1772123/pexels-photo-1772123.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "tech",
+        "colors": ["Branco"],
+        "tags": ["teclado", "tech", "mecanico", "sem fio", "minimalismo", "gamer"]
+    },
+    {
+        "id": 12,
+        "name": "Poltrona 'Lina'",
+        "price": 1899.90,
+        "description": "Linhas retas e estofado em linho de alta qualidade. Uma peça de destaque que convida ao relaxamento.",
+        "image": "https://images.pexels.com/photos/6782470/pexels-photo-6782470.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/6782470/pexels-photo-6782470.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/7005295/pexels-photo-7005295.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "minimalismo",
+        "colors": ["Cinza", "Branco"],
+        "tags": ["poltrona", "minimalismo", "sala", "conforto"]
+    },
+    {
+        "id": 13,
+        "name": "Tapete 'Lines'",
+        "price": 499.90,
+        "description": "Tapete de 2,00m x 1,50m com padrões geométricos sutis. Traz textura e aconchego ao ambiente.",
+        "image": "https://images.pexels.com/photos/6207818/pexels-photo-6207818.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/6207818/pexels-photo-6207818.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/6585614/pexels-photo-6585614.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "decor",
+        "tags": ["tapete", "decor", "minimalismo", "sala"]
+    },
+    {
+        "id": 14,
+        "name": "Smartwatch Aura 'Edge'",
+        "price": 1999.90,
+        "description": "Tela de safira, caixa em titânio e monitoramento avançado de saúde. A união de elegância e tecnologia.",
+        "image": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/443416/pexels-photo-443416.png?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "tech",
+        "colors": ["Preto", "Dourado"],
+        "tags": ["smartwatch", "tech", "relogio", "saude"]
+    },
+    {
+        "id": 15,
+        "name": "Luminária de Chão 'Arco'",
+        "price": 999.90,
+        "description": "Um clássico do design. Base em mármore e haste em aço escovado. Iluminação elegante para sua sala de estar.",
+        "image": "https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/6492397/pexels-photo-6492397.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "decor",
+        "colors": ["Dourado"],
+        "tags": ["luminaria", "decor", "minimalismo", "chao", "sala"]
+    },
+    {
+        "id": 16,
+        "name": "Tênis 'Momentum'",
+        "price": 649.90,
+        "description": "Tênis casual com design urbano, sola de alta absorção e cabedal em peça única. Conforto para o dia todo.",
+        "image": "https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+        "gallery": [
+            "https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop",
+            "https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800&h=800&fit=crop"
+        ],
+        "category": "urbano",
+        "colors": ["Preto", "Branco"],
+        "sizes": ["39", "40", "41", "42", "43"],
+        "tags": ["tenis", "urbano", "moda", "calcado"]
+    }
+]

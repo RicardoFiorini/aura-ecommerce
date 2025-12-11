@@ -1,0 +1,188 @@
+/*
+ * =================================================================
+ * AURA E-COMMERCE - LAYOUT.CSS
+ * =================================================================
+ * Este arquivo define os estilos para os principais blocos
+ * estruturais do site: Header, Footer e seções de página.
+ * =================================================================
+ */
+
+/* --- 1. HEADER (Navbar) --- */
+
+#main-navbar {
+    /* Header estático, sem transições de 'sticky' */
+    border-bottom: 1px solid #f0f0f0;
+    /* O 'shadow-sm' do Bootstrap já está no HTML */
+}
+
+/* * Estilo do Logo
+ * Usamos .logo-font (definido no style.css) para a fonte,
+ * mas aqui definimos a cor e o tamanho específicos do header. 
+ */
+#main-navbar .navbar-brand.logo-font {
+    color: var(--color-dark);
+    font-size: 1.75rem; /* Um pouco maior que o padrão */
+    padding: 0;
+}
+
+/* * Estilo dos Links do Menu
+ * (Microinteração de sublinhado) 
+ */
+#main-navbar .nav-link {
+    font-family: var(--font-body);
+    font-weight: 700; /* Links do menu em negrito para destaque */
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    color: var(--color-text);
+    padding: 1.5rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#main-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem; /* Posição do sublinhado */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease-in-out;
+}
+
+/* Efeito hover: "cresce" o sublinhado */
+#main-navbar .nav-link:hover::after,
+#main-navbar .nav-link.active::after {
+    width: 50%;
+}
+
+/* Ajuste fino para os ícones da direita (carrinho, login) */
+#main-navbar .navbar-nav:last-child .nav-link {
+    padding: 1.5rem 0.75rem;
+}
+
+#main-navbar .navbar-nav:last-child .nav-link:hover::after,
+#main-navbar .navbar-nav:last-child .nav-link.active::after {
+    width: 0; /* Desativa o sublinhado para os ícones */
+}
+
+/* Efeito de hover simples para os ícones */
+#main-navbar .navbar-nav:last-child .nav-link:hover,
+#main-navbar .navbar-nav:last-child .nav-link.active {
+    color: var(--color-primary);
+}
+
+
+/* --- 2. SEÇÕES DE HERO (Home e Páginas Internas) --- */
+
+/* Hero principal da Home Page */
+.hero-section {
+    position: relative;
+    /* Sobreposição escura para legibilidade do texto */
+    background-color: #333; /* Fallback */
+    background-blend-mode: overlay;
+}
+
+/* Opcional: Adiciona uma camada de gradiente para legibilidade */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.4) 0%, rgba(18, 18, 18, 0.1) 100%);
+    z-index: 1;
+}
+
+/* Conteúdo do Hero (para ficar acima da sobreposição) */
+.hero-section .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Hero menor para páginas internas (ex: Sobre) */
+.page-title-hero {
+    position: relative;
+    background-color: #333;
+    background-blend-mode: overlay;
+}
+
+.page-title-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.5); /* Sobreposição mais escura */
+    z-index: 1;
+}
+
+.page-title-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* --- 3. LAYOUT DA PÁGINA "SOBRE" --- */
+
+/* Estilo para as seções de imagem/texto alternadas */
+.featurette {
+    /* O HTML já tem a estrutura, mas podemos adicionar espaçamento */
+    padding: 4rem 0;
+}
+.featurette:nth-child(even) {
+    background-color: var(--color-light-gray);
+}
+
+
+/* --- 4. LAYOUT DE SIDEBAR (Loja, Checkout) --- */
+
+/* * ATENÇÃO: Esta regra .sticky-top é para as SIDEBARS
+ * (Filtros da Loja, Resumo do Checkout).
+ * * Ela assume que você REMOVEU a classe 'sticky-top' do <header>
+ * no HTML, tornando o header estático.
+ */
+.sticky-top {
+    /* Um pequeno espaçamento do topo da página */
+    top: 24px; 
+}
+
+
+/* --- 5. FOOTER --- */
+
+.footer-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--bs-white) !important; /* Cor mais clara no hover */
+}
+
+.footer-link:hover::after {
+    width: 100%; /* Sublinhado completo no footer */
+}
+
+.social-icon {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--color-primary) !important;
+    transform: scale(1.1);
+}
